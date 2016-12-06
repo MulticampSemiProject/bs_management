@@ -1,0 +1,119 @@
+package dbInfoMain;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+import dbInfoDAO.DbInfoDAO;
+import dbInfoVO.DbInfoVO;
+
+public class DbInfoMain {
+
+	public static void main(String[] args) throws SQLException, ClassNotFoundException {
+		// TODO Auto-generated method stub
+		
+		
+		int sel = 0;
+		DbInfoDAO tidao = new DbInfoDAO();/////
+		do{
+			System.out.println("선수관리");
+			System.out.println("-------------------------------");
+			System.out.println("1: 한명입력");
+			System.out.println("2: 수정");
+			System.out.println("3: 삭제");
+			System.out.println("4: 전체출력");
+			System.out.println("5: 종료");
+			System.out.println("-------------------------------");
+			System.out.println("이용할 메뉴를 선택하세요");
+			
+			sel = Integer.parseInt(JOptionPane.showInputDialog("메뉴선택"));
+			switch (sel) {
+			case 1:
+				
+				String d = JOptionPane.showInputDialog("날짜 : ");
+				String team = JOptionPane.showInputDialog("상대팀 : ");
+				String result = JOptionPane.showInputDialog("경기결과 : ");
+				int min = Integer.parseInt(JOptionPane.showInputDialog("경기시간 : "));
+				int pts = Integer.parseInt(JOptionPane.showInputDialog("득점 : "));
+				int tp = Integer.parseInt(JOptionPane.showInputDialog("3점슛 성공/시도 : "));
+				int ft = Integer.parseInt(JOptionPane.showInputDialog("자유투 성공/시도 : "));
+				int off = Integer.parseInt(JOptionPane.showInputDialog("공격 리바운드 : "));
+				int def = Integer.parseInt(JOptionPane.showInputDialog("수비 리바운드 : "));
+				int reb = Integer.parseInt(JOptionPane.showInputDialog("리바운드(?????) : "));
+				int ast = Integer.parseInt(JOptionPane.showInputDialog("어시스트 : "));
+				int stl = Integer.parseInt(JOptionPane.showInputDialog("스틸 : "));
+				int blk = Integer.parseInt(JOptionPane.showInputDialog("블록슛(?????) : "));
+				int to = Integer.parseInt(JOptionPane.showInputDialog("턴오버 : "));
+				int pf = Integer.parseInt(JOptionPane.showInputDialog("파울(?????) : "));
+				
+				
+				boolean b1 = tidao.insert_nametel(d,team,result,min,pts,tp,ft,off,def,reb,ast,stl,blk,to,pf);
+				if(b1) //true
+					System.out.println("insert ok");
+				else
+					System.out.println("insert error");
+				break;
+			case 2:
+				String n1 = JOptionPane.showInputDialog("기존 이름은?");
+				String n2 = JOptionPane.showInputDialog("바뀔 이름은?");
+				
+				boolean b2 = tidao.update_nametel(n1, n2);
+				if(b2)
+					//JOptionPane.showMessageDialog(null, "update했다고 전해라");
+					System.out.println("update ok");
+				else
+					System.out.println("update error");
+				break;
+			case 3:
+				int delid = Integer.parseInt(JOptionPane.showInputDialog("삭제할 아이디는?"));
+				
+				boolean del = tidao.delete_nametel(delid);
+				if(del)
+					System.out.println("delete ok");
+				else
+					System.out.println("delete error");
+				break;
+			case 4:
+				ArrayList<DbInfoVO> tiArray
+				    = tidao.getAllInfo();
+				for(DbInfoVO imsi : tiArray){
+					System.out.print(imsi.getD()+"\t");
+					System.out.print(imsi.getTeam()+"\t");
+					System.out.print(imsi.getResult()+"\t");
+					System.out.print(imsi.getMin()+"\t");
+					System.out.print(imsi.getPts()+"\t");
+					System.out.print(imsi.getTp()+"\t");
+					System.out.print(imsi.getFt()+"\t");
+					System.out.print(imsi.getOff()+"\t");
+					System.out.print(imsi.getDef()+"\t");
+					System.out.print(imsi.getReb()+"\t");
+					System.out.print(imsi.getAst()+"\t");
+					System.out.print(imsi.getStl()+"\t");
+					System.out.print(imsi.getBlk()+"\t");
+					System.out.print(imsi.getTo()+"\t");
+					System.out.println(imsi.getPf());
+				}
+				break;
+			case 5:
+				JOptionPane.showMessageDialog(null, "종료합니다");
+				int aa=JOptionPane.showConfirmDialog(null, "정말 종료하시겠습니까?");
+				if(aa==JOptionPane.YES_OPTION)
+			           System.exit(1);	   
+				else
+					JOptionPane.showMessageDialog(null, "종료를 취소합니다");
+				 	
+				
+				//System.out.println("종료합니다");
+				tidao.pstmtClose();
+				tidao.getAllInfoClose();
+				break;
+			}
+		}while(sel !=5);/////////////////////5에서 15로 바꿔줘야하나?
+		
+		
+		
+
+	}
+
+}
