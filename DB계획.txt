@@ -1,0 +1,68 @@
+-회원
+회원number(pk) 이름 비밀번호
+
+
+-경기
+경기회차(pk) 대결팀 일시 경과여부(1,2,3) 팀1결과(팀1fk) 팀2결과(팀2fk) 선수결과(선수 fk)
+
+
+
+
+http://www.kbl.or.kr/schedule/today/todaygame_detail.asp?scode=29&gcode=01&gno=70&tdate=20161201
+
+
+
+-선수
+선수넘버(pk) 이름 사진 소속팀(fk)
+
+
+
+G: 게임수	Min.: 경기시간(분:초)	2P/2PA: 필드골 성공/시도	3P/3PA: 3점슛 성공/시도
+
+FG%: 야투성공률	FT/FTA : 자유투 성공/시도	%: 성공률	Off: 공격 리바운드
+
+Def: 수비 리바운드	RPG: 경기당 리바운드	Ast: 어시스트	APG: 경기당 어시스트
+
+w/FT: 파울(자유투 유)	w/oFT: 파울(자유투 무)	Stl: 스틸	BS: 블록슛
+
+GD: 굿디펜스	TO: 턴오버	DK/DkA: 덩크슛 성공/시도	PTS: 득점
+
+PPG: 경기당 평균득점	
+
+
+http://www.kbl.or.kr/stats/team_player_gamerecord.asp?gpart=1&tcode=16&scode=29&gcode=01
+
+
+
+
+
+-팀
+
+공
+득점 리바운드 어시스트 스틸 블록 3점슛 턴오버 2점슛 3점슛 자유투
+
+수
+득점 리바운드 어시스트 스틸 블록 3점슛 턴오버 2점슛 3점슛 자유투
+
+http://www.kbl.or.kr/stats/attack_defence_comparison.asp
+
+
+
+구현기능
+-관리자
+
+:회원:조회
+:회원:입력
+:회원:삭제
+:회원:수정
+
+:경기:일정입력
+
+:선수:성적입력
+
+-회원
+:회원:조회
+
+승부예측조회
+:팀:조회
+-선수-조회
