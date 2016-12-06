@@ -1,33 +1,33 @@
--È¸¿ø
-È¸¿ønumber(pk) ÀÌ¸§ ºñ¹Ð¹øÈ£
+-íšŒì›
+íšŒì›number(pk) ì´ë¦„ ë¹„ë°€ë²ˆí˜¸
 
 
--°æ±â
-°æ±âÈ¸Â÷(pk) ´ë°áÆÀ ÀÏ½Ã °æ°ú¿©ºÎ(1,2,3) ÆÀ1°á°ú(ÆÀ1fk) ÆÀ2°á°ú(ÆÀ2fk) ¼±¼ö°á°ú(¼±¼ö fk)
+-ê²½ê¸°
+ê²½ê¸°íšŒì°¨(pk) ëŒ€ê²°íŒ€ ì¼ì‹œ ê²½ê³¼ì—¬ë¶€(1,2,3) íŒ€1ê²°ê³¼(íŒ€1fk) íŒ€2ê²°ê³¼(íŒ€2fk) ì„ ìˆ˜ê²°ê³¼(ì„ ìˆ˜ fk)
 
 
-
+SF
 
 http://www.kbl.or.kr/schedule/today/todaygame_detail.asp?scode=29&gcode=01&gno=70&tdate=20161201
 
 
 
--¼±¼ö
-¼±¼ö³Ñ¹ö(pk) ÀÌ¸§ »çÁø ¼Ò¼ÓÆÀ(fk)
+-ì„ ìˆ˜
+ì„ ìˆ˜ë„˜ë²„(pk) ì´ë¦„ ì‚¬ì§„ ì†Œì†íŒ€(fk)
 
 
 
-G: °ÔÀÓ¼ö	Min.: °æ±â½Ã°£(ºÐ:ÃÊ)	2P/2PA: ÇÊµå°ñ ¼º°ø/½Ãµµ	3P/3PA: 3Á¡½¸ ¼º°ø/½Ãµµ
+G: ê²Œìž„ìˆ˜	Min.: ê²½ê¸°ì‹œê°„(ë¶„:ì´ˆ)	2P/2PA: í•„ë“œê³¨ ì„±ê³µ/ì‹œë„	3P/3PA: 3ì ìŠ› ì„±ê³µ/ì‹œë„
 
-FG%: ¾ßÅõ¼º°ø·ü	FT/FTA : ÀÚÀ¯Åõ ¼º°ø/½Ãµµ	%: ¼º°ø·ü	Off: °ø°Ý ¸®¹Ù¿îµå
+FG%: ì•¼íˆ¬ì„±ê³µë¥ 	FT/FTA : ìžìœ íˆ¬ ì„±ê³µ/ì‹œë„	%: ì„±ê³µë¥ 	Off: ê³µê²© ë¦¬ë°”ìš´ë“œ
 
-Def: ¼öºñ ¸®¹Ù¿îµå	RPG: °æ±â´ç ¸®¹Ù¿îµå	Ast: ¾î½Ã½ºÆ®	APG: °æ±â´ç ¾î½Ã½ºÆ®
+Def: ìˆ˜ë¹„ ë¦¬ë°”ìš´ë“œ	RPG: ê²½ê¸°ë‹¹ ë¦¬ë°”ìš´ë“œ	Ast: ì–´ì‹œìŠ¤íŠ¸	APG: ê²½ê¸°ë‹¹ ì–´ì‹œìŠ¤íŠ¸
 
-w/FT: ÆÄ¿ï(ÀÚÀ¯Åõ À¯)	w/oFT: ÆÄ¿ï(ÀÚÀ¯Åõ ¹«)	Stl: ½ºÆ¿	BS: ºí·Ï½¸
+w/FT: íŒŒìš¸(ìžìœ íˆ¬ ìœ )	w/oFT: íŒŒìš¸(ìžìœ íˆ¬ ë¬´)	Stl: ìŠ¤í‹¸	BS: ë¸”ë¡ìŠ›
 
-GD: ±ÂµðÆæ½º	TO: ÅÏ¿À¹ö	DK/DkA: µ¢Å©½¸ ¼º°ø/½Ãµµ	PTS: µæÁ¡
+GD: êµ¿ë””íŽœìŠ¤	TO: í„´ì˜¤ë²„	DK/DkA: ë©í¬ìŠ› ì„±ê³µ/ì‹œë„	PTS: ë“ì 
 
-PPG: °æ±â´ç Æò±ÕµæÁ¡	
+PPG: ê²½ê¸°ë‹¹ í‰ê· ë“ì 	
 
 
 http://www.kbl.or.kr/stats/team_player_gamerecord.asp?gpart=1&tcode=16&scode=29&gcode=01
@@ -36,33 +36,33 @@ http://www.kbl.or.kr/stats/team_player_gamerecord.asp?gpart=1&tcode=16&scode=29&
 
 
 
--ÆÀ
+-íŒ€
 
-°ø
-µæÁ¡ ¸®¹Ù¿îµå ¾î½Ã½ºÆ® ½ºÆ¿ ºí·Ï 3Á¡½¸ ÅÏ¿À¹ö 2Á¡½¸ 3Á¡½¸ ÀÚÀ¯Åõ
+ê³µ
+ë“ì  ë¦¬ë°”ìš´ë“œ ì–´ì‹œìŠ¤íŠ¸ ìŠ¤í‹¸ ë¸”ë¡ 3ì ìŠ› í„´ì˜¤ë²„ 2ì ìŠ› 3ì ìŠ› ìžìœ íˆ¬
 
-¼ö
-µæÁ¡ ¸®¹Ù¿îµå ¾î½Ã½ºÆ® ½ºÆ¿ ºí·Ï 3Á¡½¸ ÅÏ¿À¹ö 2Á¡½¸ 3Á¡½¸ ÀÚÀ¯Åõ
+ìˆ˜
+ë“ì  ë¦¬ë°”ìš´ë“œ ì–´ì‹œìŠ¤íŠ¸ ìŠ¤í‹¸ ë¸”ë¡ 3ì ìŠ› í„´ì˜¤ë²„ 2ì ìŠ› 3ì ìŠ› ìžìœ íˆ¬
 
 http://www.kbl.or.kr/stats/attack_defence_comparison.asp
 
 
 
-±¸Çö±â´É
--°ü¸®ÀÚ
+êµ¬í˜„ê¸°ëŠ¥
+-ê´€ë¦¬ìž
 
-:È¸¿ø:Á¶È¸
-:È¸¿ø:ÀÔ·Â
-:È¸¿ø:»èÁ¦
-:È¸¿ø:¼öÁ¤
+:íšŒì›:ì¡°íšŒ
+:íšŒì›:ìž…ë ¥
+:íšŒì›:ì‚­ì œ
+:íšŒì›:ìˆ˜ì •
 
-:°æ±â:ÀÏÁ¤ÀÔ·Â
+:ê²½ê¸°:ì¼ì •ìž…ë ¥
 
-:¼±¼ö:¼ºÀûÀÔ·Â
+:ì„ ìˆ˜:ì„±ì ìž…ë ¥
 
--È¸¿ø
-:È¸¿ø:Á¶È¸
+-íšŒì›
+:íšŒì›:ì¡°íšŒ
 
-½ÂºÎ¿¹ÃøÁ¶È¸
-:ÆÀ:Á¶È¸
--¼±¼ö-Á¶È¸
+ìŠ¹ë¶€ì˜ˆì¸¡ì¡°íšŒ
+:íŒ€:ì¡°íšŒ
+-ì„ ìˆ˜-ì¡°íšŒ
