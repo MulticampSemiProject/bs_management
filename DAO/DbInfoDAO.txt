@@ -90,7 +90,7 @@ public class DbInfoDAO {
 		return true;
 	}
 
-//�����޼ҵ�
+//¼öÁ¤¸Þ¼Òµå
 
 	public boolean update_nametel(String name, String name2){
 		 String sql
@@ -107,7 +107,7 @@ public class DbInfoDAO {
 				return true;
 			}
 			
-			//�����޼ҵ�
+			//»èÁ¦¸Þ¼Òµå
 			public boolean delete_nametel(int id){
 				String sql 
 				= "delete from DbTable where id=?";
