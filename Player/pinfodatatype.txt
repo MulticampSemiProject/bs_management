@@ -1,0 +1,9 @@
+create table pinfo(
+   	player_name       	varchar2(20), 
+   	player_birth_date	varchar2(10), 
+	player_height		varchar2(10), 
+	player_team			varchar2(30), 
+	player_position		varchar2(10), 
+	player_number		varchar2(10),		 
+	player_school 		varchar2(30)
+);
