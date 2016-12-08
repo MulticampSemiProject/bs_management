@@ -1,0 +1,14 @@
+
+create table Gtable (
+ g_team varchar2(25),
+ g_pts varchar2(25),
+ g_reb varchar2(25),
+ g_ast varchar2(25),
+ g_stl varchar2(25),
+ g_blk varchar2(25),
+ g_p3 varchar2(25),
+ g_to varchar2(25),
+ g_p2 varchar2(25),
+ g_p3r varchar2(25),
+ g_ft varchar2(25)
+);
