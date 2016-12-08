@@ -1,0 +1,124 @@
+package gteam;
+
+public class gteamVO {
+	
+	
+	private String g_team;
+	private String g_pts;
+	private String g_reb;
+	private String g_ast;
+	private String g_stl;
+	private String g_blk;
+	private String g_p3;
+	private String g_to;
+	private String g_p2;
+	private String g_p3r;
+	private String g_ft;
+	
+	public gteamVO(String g_team, String g_pts, String g_reb, String g_ast, String g_stl, String g_blk, String g_p3,
+			String g_to, String g_p2, String g_p3r, String g_ft) {
+		super();
+		this.g_team = g_team;
+		this.g_pts = g_pts;
+		this.g_reb = g_reb;
+		this.g_ast = g_ast;
+		this.g_stl = g_stl;
+		this.g_blk = g_blk;
+		this.g_p3 = g_p3;
+		this.g_to = g_to;
+		this.g_p2 = g_p2;
+		this.g_p3r = g_p3r;
+		this.g_ft = g_ft;
+	}
+
+	public String getG_team() {
+		return g_team;
+	}
+
+	public void setG_team(String g_team) {
+		this.g_team = g_team;
+	}
+
+	public String getG_pts() {
+		return g_pts;
+	}
+
+	public void setG_pts(String g_pts) {
+		this.g_pts = g_pts;
+	}
+
+	public String getG_reb() {
+		return g_reb;
+	}
+
+	public void setG_reb(String g_reb) {
+		this.g_reb = g_reb;
+	}
+
+	public String getG_ast() {
+		return g_ast;
+	}
+
+	public void setG_ast(String g_ast) {
+		this.g_ast = g_ast;
+	}
+
+	public String getG_stl() {
+		return g_stl;
+	}
+
+	public void setG_stl(String g_stl) {
+		this.g_stl = g_stl;
+	}
+
+	public String getG_blk() {
+		return g_blk;
+	}
+
+	public void setG_blk(String g_blk) {
+		this.g_blk = g_blk;
+	}
+
+	public String getG_p3() {
+		return g_p3;
+	}
+
+	public void setG_p3(String g_p3) {
+		this.g_p3 = g_p3;
+	}
+
+	public String getG_to() {
+		return g_to;
+	}
+
+	public void setG_to(String g_to) {
+		this.g_to = g_to;
+	}
+
+	public String getG_p2() {
+		return g_p2;
+	}
+
+	public void setG_p2(String g_p2) {
+		this.g_p2 = g_p2;
+	}
+
+	public String getG_p3r() {
+		return g_p3r;
+	}
+
+	public void setG_p3r(String g_p3r) {
+		this.g_p3r = g_p3r;
+	}
+
+	public String getG_ft() {
+		return g_ft;
+	}
+
+	public void setG_ft(String g_ft) {
+		this.g_ft = g_ft;
+	}
+	
+	
+
+}
