@@ -6,3 +6,34 @@ kbl league match management program
 DB 계획, project 계획 샘플 올렸습니다.
 https://coderanch.com/t/523844/Generate-RADAR-chart-jsp
 http://www.kbl.or.kr/players/player_info.asp?pcode=290794
+
+
+Naming convention
+=====================
+DB테이블이름
+
+선수경기당성적
+pmatch
+
+팀공수
+gteam
+steam
+
+팀선수정보
+pinfo
+======================
+DB txt file 이름
+
+선수경기당성적
+포지션_백넘버.txt
+
+리그전체팀공수
+gteam.txt
+steam.txt
+
+팀선수사진
+포지션_백넘버.txt
+
+
+팀선수정보
+pinfo_팀이름.txt
