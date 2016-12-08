@@ -1,0 +1,127 @@
+package gteam;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+public class gteamDAO {
+
+	private Connection con;
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;//전역 
+	
+	public gteamDAO() 
+	 throws ClassNotFoundException, SQLException{
+	
+		con= new DbInfoDBConn().getConnection();
+		//접속객체 get ->con 
+	}
+	public void pstmtClose() throws SQLException{
+		if(pstmt != null){ pstmt.close(); }
+	}
+	public void getAllInfoClose() 
+			throws SQLException{
+		if(rs != null){ rs.close(); }
+		if(pstmt != null){ pstmt.close(); }
+		if(con != null){ con.close(); }
+	}
+	
+	//전체출력을 위해
+	
+		
+public ArrayList<gteamVO> getAllInfo() //메소드
+			throws SQLException{
+ArrayList<gteamVO> garray //generic
+     = new ArrayList<gteamVO>();
+	String sql 
+	= "SELECT * FROM Gteam";
+		
+		pstmt = con.prepareStatement(sql);
+		rs = pstmt.executeQuery();
+		while(rs.next()){
+			
+			String g_team=rs.getString("g_team");
+			String g_pts=rs.getString("g_pts");
+			String g_reb=rs.getString("g_reb");
+			String g_ast=rs.getString("g_ast");
+			String g_stl=rs.getString("g_stl");
+			String g_blk=rs.getString("g_blk");
+			String g_p3=rs.getString("g_p3");
+			String g_to=rs.getString("g_to");
+			String g_p2=rs.getString("g_p2");
+			String g_p3r=rs.getString("g_p3r");
+			String g_ft=rs.getString("g_ft");
+			
+						
+			//table->변수에 넣기 
+			
+	gteamVO gv = new gteamVO(g_team,g_pts,g_reb,g_ast,g_stl,g_blk,g_p3,g_to,g_p2,g_p3r,g_ft);
+	    //VO객체에 넣기 
+			garray.add(gv); //VO객체->collection에 넣기 
+		}
+		return garray;
+	}
+
+public boolean insert_gteam//자료입력 메소드
+(String g_team, String g_pts, String g_reb, String g_ast, String g_stl, String g_blk, String g_p3,
+		String g_to, String g_p2, String g_p3r, String g_ft) {
+ String sql 
+ = "insert into gteam values(?,?,?,?,?,?,?,?,?,?,?)";
+		try{
+			pstmt=con.prepareStatement(sql);
+			pstmt.setString(1, g_team);
+			pstmt.setString(2, g_pts);
+			pstmt.setString(3, g_reb);
+			pstmt.setString(4, g_ast);
+			pstmt.setString(5, g_stl);
+			pstmt.setString(6, g_blk);
+			pstmt.setString(7, g_p3);
+			pstmt.setString(8, g_to);
+			pstmt.setString(9, g_p2);
+			pstmt.setString(10, g_p3r);
+			pstmt.setString(11, g_ft);
+			pstmt.executeUpdate();///////////////
+		}catch(SQLException e){
+			System.out.println("insert Exception");
+			return false;
+		}
+		return true;
+	}
+/*
+//수정메소드	
+public boolean update_gteam(String g_team, String g_team2){
+ String sql
+ = "update gteam set g_team=? where g_team=?";
+		try{
+			pstmt=con.prepareStatement(sql);
+			pstmt.setString(1, g_team2);
+			pstmt.setString(2, g_team);
+			
+			pstmt.executeUpdate();///////////////
+		}catch(SQLException e){
+		System.out.println("update Exception");
+			return false;
+		}
+		return true;
+	}
+	*/
+
+	//삭제메소드
+	public boolean delete_gteam(String g_team){
+		String sql 
+		= "delete from gteam where g_team=?";
+		try{
+			pstmt=con.prepareStatement(sql);
+			pstmt.setString(1, g_team);
+			pstmt.executeUpdate();//////////
+		}catch(SQLException e){
+		System.out.println("delete Exception");
+			return false;
+		}
+		return true;
+	}
+	
+	
+}
