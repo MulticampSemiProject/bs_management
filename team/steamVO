@@ -1,0 +1,123 @@
+package steam;
+
+public class steamVO {
+	
+	
+	private String s_team;
+	private String s_pts;
+	private String s_reb;
+	private String s_ast;
+	private String s_stl;
+	private String s_blk;
+	private String s_p3;
+	private String s_to;
+	private String s_p2;
+	private String s_p3r;
+	private String s_ft;
+	
+	public steamVO(String s_team, String s_pts, String s_reb,
+			String s_ast, String s_stl, String s_blk, String s_p3,
+			String s_to, String s_p2, String s_p3r, String s_ft) {
+		super();
+		this.s_team = s_team;
+		this.s_pts  = s_pts;
+		this.s_reb  = s_reb;
+		this.s_ast  = s_ast;
+		this.s_stl  = s_stl;
+		this.s_blk  = s_blk;
+		this.s_p3   = s_p3;
+		this.s_to   = s_to;
+		this.s_p2   = s_p2;
+		this.s_p3r  = s_p3r;
+		this.s_ft   = s_ft;
+	}
+
+	public String getS_team() {
+		return s_team;
+	}
+
+	public void setS_team(String s_team) {
+		this.s_team = s_team;
+	}
+
+	public String getS_pts() {
+		return s_pts;
+	}
+
+	public void setS_pts(String s_pts) {
+		this.s_pts = s_pts;
+	}
+
+	public String getS_reb() {
+		return s_reb;
+	}
+
+	public void setS_reb(String s_reb) {
+		this.s_reb = s_reb;
+	}
+
+	public String getS_ast() {
+		return s_ast;
+	}
+
+	public void setS_ast(String s_ast) {
+		this.s_ast = s_ast;
+	}
+
+	public String getS_stl() {
+		return s_stl;
+	}
+
+	public void setS_stl(String s_stl) {
+		this.s_stl = s_stl;
+	}
+
+	public String getS_blk() {
+		return s_blk;
+	}
+
+	public void setS_blk(String s_blk) {
+		this.s_blk = s_blk;
+	}
+
+	public String getS_p3() {
+		return s_p3;
+	}
+
+	public void setS_p3(String s_p3) {
+		this.s_p3 = s_p3;
+	}
+
+	public String getS_to() {
+		return s_to;
+	}
+
+	public void setS_to(String s_to) {
+		this.s_to = s_to;
+	}
+
+	public String getS_p2() {
+		return s_p2;
+	}
+
+	public void setS_p2(String s_p2) {
+		this.s_p2 = s_p2;
+	}
+
+	public String getS_p3r() {
+		return s_p3r;
+	}
+
+	public void setS_p3r(String s_p3r) {
+		this.s_p3r = s_p3r;
+	}
+
+	public String getS_ft() {
+		return s_ft;
+	}
+
+	public void setS_ft(String s_ft) {
+		this.s_ft = s_ft;
+	}
+
+}
