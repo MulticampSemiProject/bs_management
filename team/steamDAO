@@ -1,0 +1,131 @@
+package steam;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import steam.DbInfoDBConn;
+import steam.steamVO;
+
+public class steamDAO {
+
+	
+	private Connection con;
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;//전역 
+	
+	public steamDAO() 
+	 throws ClassNotFoundException, SQLException{
+	
+		con= new DbInfoDBConn().getConnection();
+		//접속객체 get ->con 
+	}
+	public void pstmtClose() throws SQLException{
+		if(pstmt != null){ pstmt.close(); }
+	}
+	public void getAllInfoClose() 
+			throws SQLException{
+		if(rs != null){ rs.close(); }
+		if(pstmt != null){ pstmt.close(); }
+		if(con != null){ con.close(); }
+	}
+	
+	//전체출력을 위해
+	
+		
+public ArrayList<steamVO> getAllInfo() //메소드
+			throws SQLException{
+ArrayList<steamVO> sarray //generic
+     = new ArrayList<steamVO>();
+	String sql 
+	= "SELECT * FROM steam";
+		
+		pstmt = con.prepareStatement(sql);
+		rs = pstmt.executeQuery();
+		while(rs.next()){
+			
+			String s_team=rs.getString("s_team");
+			String s_pts=rs.getString("s_pts");
+			String s_reb=rs.getString("s_reb");
+			String s_ast=rs.getString("s_ast");
+			String s_stl=rs.getString("s_stl");
+			String s_blk=rs.getString("s_blk");
+			String s_p3=rs.getString("s_p3");
+			String s_to=rs.getString("s_to");
+			String s_p2=rs.getString("s_p2");
+			String s_p3r=rs.getString("s_p3r");
+			String s_ft=rs.getString("s_ft");
+			
+						
+			//team->변수에 넣기 
+			
+	steamVO gv = new steamVO(s_team,s_pts,s_reb,s_ast,s_stl,s_blk,s_p3,s_to,s_p2,s_p3r,s_ft);
+	    //VO객체에 넣기 
+			sarray.add(gv); //VO객체->collection에 넣기 
+		}
+		return sarray;
+	}
+
+public boolean insert_steam//자료입력 메소드
+(String s_team, String s_pts, String s_reb, String s_ast, String s_stl, String s_blk, String s_p3,
+		String s_to, String s_p2, String s_p3r, String s_ft) {
+ String sql 
+ = "insert into steam values(?,?,?,?,?,?,?,?,?,?,?)";
+		try{
+			pstmt=con.prepareStatement(sql);
+			pstmt.setString(1, s_team);
+			pstmt.setString(2, s_pts);
+			pstmt.setString(3, s_reb);
+			pstmt.setString(4, s_ast);
+			pstmt.setString(5, s_stl);
+			pstmt.setString(6, s_blk);
+			pstmt.setString(7, s_p3);
+			pstmt.setString(8, s_to);
+			pstmt.setString(9, s_p2);
+			pstmt.setString(10, s_p3r);
+			pstmt.setString(11, s_ft);
+			pstmt.executeUpdate();///////////////
+		}catch(SQLException e){
+			System.out.println("insert Exception");
+			return false;
+		}
+		return true;
+	}
+/*
+//수정메소드	
+public boolean update_steam(String s_team, String s_team2){
+ String sql
+ = "update steam set s_team=? where s_team=?";
+		try{
+			pstmt=con.prepareStatement(sql);
+			pstmt.setString(1, s_team2);
+			pstmt.setString(2, s_team);
+			
+			pstmt.executeUpdate();///////////////
+		}catch(SQLException e){
+		System.out.println("update Exception");
+			return false;
+		}
+		return true;
+	}
+	*/
+
+	//삭제메소드
+	public boolean delete_steam(String s_team){
+		String sql 
+		= "delete from steam where s_team=?";
+		try{
+			pstmt=con.prepareStatement(sql);
+			pstmt.setString(1, s_team);
+			pstmt.executeUpdate();//////////
+		}catch(SQLException e){
+		System.out.println("delete Exception");
+			return false;
+		}
+		return true;
+	}
+	
+	
+}
