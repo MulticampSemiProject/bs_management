@@ -1,123 +1,266 @@
 package point_cal;
 
 public class cal_VO {
+	private String ID;//
+	private String MATCHDATE;
+	private String VSTEAM;
+	private String MATCHRESULT;
+	private String MINS;
+	private String PTS;
+	private String TP; //
+	private String FT;
+	private String OFF;
+	private String DEF;
+	private String REB;
+	private String AST;
+	private String STL;
+	private String BLK;
+	private String TOV;
+	private String PF;//
+	private String PBNUM;//
+	private String PRTEAM;//
+	
+	
 
-	private String player_team;
-	private String player_pts;
-	private String player_reb;
-	private String player_ast;
-	private String player_stl;
-	private String player_blk;
-	private String player_p3;
-	private String player_to;
-	private String player_p2;
-	private String player_p3r;
-	private String player_ft;
-
-	public cal_VO(String player_team, String player_pts, String player_reb,
-			String player_ast, String player_stl, String player_blk,
-			String player_p3, String player_to, String player_p2,
-			String player_p3r, String player_ft) {
+	public cal_VO(String ID, String MATCHDATE, String VSTEAM, String MATCHRESULET,
+			String MINS, String PTS, String TP, String FT, String OFF,String DEF,
+			String REB,	String AST, String STL, String BLK, String TOV, String PF,
+			String PBNUM, String PRTEAM) {
 		super();
-		this.player_team = player_team;
-		this.player_pts = player_pts;
-		this.player_reb = player_reb;
-		this.player_ast = player_ast;
-		this.player_stl = player_stl;
-		this.player_blk = player_blk;
-		this.player_p3 = player_p3;
-		this.player_to = player_to;
-		this.player_p2 = player_p2;
-		this.player_p3r = player_p3r;
-		this.player_ft = player_ft;
+		this.ID = ID;
+		this.MATCHDATE = MATCHDATE;
+		this.VSTEAM = VSTEAM;
+		this.MATCHRESULT = MATCHRESULT;
+		this.MINS = MATCHRESULT;
+		this.PTS = PTS;
+		this.TP = TP; //
+		this.FT = FT;
+		this.OFF = OFF;
+		this.DEF = DEF;
+		this.REB = REB;
+		this.AST = AST;
+		this.STL = STL;
+		this.BLK = BLK;
+		this.TOV = TOV;
+		this.PF = PF;//
+		this.PBNUM = PBNUM;//
+		this.PRTEAM = PRTEAM;//
+		}
+
+
+
+	public String getID() {
+		return ID;
 	}
 
-	public String getplayer_team() {
-		return player_team;
+
+
+	public void setID(String iD) {
+		ID = iD;
 	}
 
-	public void setplayer_team(String player_team) {
-		this.player_team = player_team;
+
+
+	public String getMATCHDATE() {
+		return MATCHDATE;
 	}
 
-	public String getplayer_pts() {
-		return player_pts;
+
+
+	public void setMATCHDATE(String mATCHDATE) {
+		MATCHDATE = mATCHDATE;
 	}
 
-	public void setplayer_pts(String player_pts) {
-		this.player_pts = player_pts;
+
+
+	public String getVSTEAM() {
+		return VSTEAM;
 	}
 
-	public String getplayer_reb() {
-		return player_reb;
+
+
+	public void setVSTEAM(String vSTEAM) {
+		VSTEAM = vSTEAM;
 	}
 
-	public void setplayer_reb(String player_reb) {
-		this.player_reb = player_reb;
+
+
+	public String getMATCHRESULT() {
+		return MATCHRESULT;
 	}
 
-	public String getplayer_ast() {
-		return player_ast;
+
+
+	public void setMATCHRESULT(String mATCHRESULT) {
+		MATCHRESULT = mATCHRESULT;
 	}
 
-	public void setplayer_ast(String player_ast) {
-		this.player_ast = player_ast;
+
+
+	public String getMINS() {
+		return MINS;
 	}
 
-	public String getplayer_stl() {
-		return player_stl;
+
+
+	public void setMINS(String mINS) {
+		MINS = mINS;
 	}
 
-	public void setplayer_stl(String player_stl) {
-		this.player_stl = player_stl;
+
+
+	public String getPTS() {
+		return PTS;
 	}
 
-	public String getplayer_blk() {
-		return player_blk;
+
+
+	public void setPTS(String pTS) {
+		PTS = pTS;
 	}
 
-	public void setplayer_blk(String player_blk) {
-		this.player_blk = player_blk;
+
+
+	public String getTP() {
+		return TP;
 	}
 
-	public String getplayer_p3() {
-		return player_p3;
+
+
+	public void setTP(String tP) {
+		TP = tP;
 	}
 
-	public void setplayer_p3(String player_P3) {
-		this.player_p3 = player_p3;
+
+
+	public String getFT() {
+		return FT;
 	}
 
-	public String getplayer_to() {
-		return player_to;
+
+
+	public void setFT(String fT) {
+		FT = fT;
 	}
 
-	public void setplayer_to(String player_to) {
-		this.player_to = player_to;
+
+
+	public String getOFF() {
+		return OFF;
 	}
 
-	public String getplayer_p2() {
-		return player_p2;
+
+
+	public void setOFF(String oFF) {
+		OFF = oFF;
 	}
 
-	public void setplayer_p2(String player_p2) {
-		this.player_p2 = player_p2;
+
+
+	public String getDEF() {
+		return DEF;
 	}
 
-	public String getplayer_p3r() {
-		return player_p3r;
+
+
+	public void setDEF(String dEF) {
+		DEF = dEF;
 	}
 
-	public void setplayer_p3r(String player_p3r) {
-		this.player_p3r = player_p3r;
+
+
+	public String getREB() {
+		return REB;
 	}
 
-	public String getplayer_ft() {
-		return player_ft;
+
+
+	public void setREB(String rEB) {
+		REB = rEB;
 	}
 
-	public void setplayer_ft(String player_ft) {
-		this.player_ft = player_ft;
+
+
+	public String getAST() {
+		return AST;
+	}
+
+
+
+	public void setAST(String aST) {
+		AST = aST;
+	}
+
+
+
+	public String getSTL() {
+		return STL;
+	}
+
+
+
+	public void setSTL(String sTL) {
+		STL = sTL;
+	}
+
+
+
+	public String getBLK() {
+		return BLK;
+	}
+
+
+
+	public void setBLK(String bLK) {
+		BLK = bLK;
+	}
+
+
+
+	public String getTOV() {
+		return TOV;
+	}
+
+
+
+	public void setTOV(String tOV) {
+		TOV = tOV;
+	}
+
+
+
+	public String getPF() {
+		return PF;
+	}
+
+
+
+	public void setPF(String pF) {
+		PF = pF;
+	}
+
+
+
+	public String getPBNUM() {
+		return PBNUM;
+	}
+
+
+
+	public void setPBNUM(String pBNUM) {
+		PBNUM = pBNUM;
+	}
+
+
+
+	public String getPRTEAM() {
+		return PRTEAM;
+	}
+
+
+
+	public void setPRTEAM(String pRTEAM) {
+		PRTEAM = pRTEAM;
 	}
 
 }

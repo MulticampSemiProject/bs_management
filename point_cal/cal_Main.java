@@ -20,9 +20,11 @@ public class cal_Main {
 			System.out.println("선수명단!!");
 			System.out.println("-------------------------------");
 			System.out.println("1: 센터");
-			System.out.println("2: 공격형 FD & GD");
-			System.out.println("3: 수비형 FD & GD");
-			System.out.println("4: 종료");
+			System.out.println("2: 공격형 FD");
+			System.out.println("3: 수비형 FD");
+			System.out.println("4: 공격형 GD");
+			System.out.println("5: 수비형 GD");
+			System.out.println("6: 종료");
 			System.out.println("-------------------------------");
 			System.out.println("이용할 메뉴를 선택하세요");
 
@@ -37,20 +39,67 @@ public class cal_Main {
 					
 					System.out.println(playerID + ", " + playerAvgCnt);
 				}
-//				String name1 = System.out.println("추천선수는 " + name1);
 				break;
-
+				
+			case 2:
+				rs = pdao.listOffFD();
+				while(rs.next()) {
+					System.out.println("?");
+					playerID		= rs.getString(1);
+					playerAvgCnt	= rs.getString(2);
+					
+					System.out.println(playerID + ", " + playerAvgCnt);
+				}
+				break;	
+			case 3:
+				rs = pdao.listDefFD();
+				while(rs.next()) {
+					System.out.println("?");
+					playerID		= rs.getString(1);
+					playerAvgCnt	= rs.getString(2);
+					
+					System.out.println(playerID + ", " + playerAvgCnt);
+				}
+				break;
+			case 4:
+				rs = pdao.listOffGD();
+				while(rs.next()) {
+					System.out.println("?");
+					playerID		= rs.getString(1);
+					playerAvgCnt	= rs.getString(2);
+					
+					System.out.println(playerID + ", " + playerAvgCnt);
+				}
+				break;
+			case 5:
+				rs = pdao.listDefGD();
+				while(rs.next()) {
+					System.out.println("?");
+					playerID		= rs.getString(1);
+					playerAvgCnt	= rs.getString(2);
+					
+					System.out.println(playerID + ", " + playerAvgCnt);
+				}
+				break;
+				
+/*
 			case 2:
 				rs = pdao.listOffencePlayer();
-//				String name2 = System.out.println("추천선수는 " + name2);
+				while(rs.next()) {
+					System.out.println("?");
+					playerID		= rs.getString(1);
+					playerAvgCnt	= rs.getString(2);
+					
+					System.out.println(playerID + ", " + playerAvgCnt);
+				}
+				
 				break;
 
 			case 3:
 				rs = pdao.listDefencePlayer();
-//				String name3 = System.out.println("추천선수는 " + name3);
 				break;
-
-			case 4:
+*/
+			case 6:
 				JOptionPane.showMessageDialog(null, "종료..Good Luck!!!!!!!");
 				int aa = JOptionPane.showConfirmDialog(null, "종료?????");
 				if (aa == JOptionPane.YES_OPTION)
