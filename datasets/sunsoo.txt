@@ -1,0 +1,460 @@
+create table pinfo(
+   	player_name       	varchar2(50), 
+   	player_birth_date	varchar2(10), 
+	player_height		varchar2(10), 
+	player_team		varchar2(100), 
+	player_position		varchar2(10), 
+	player_number		varchar2(10),		 
+	player_school 		varchar2(50),
+	player_teamid		varchar2(10)
+);
+
+insert into pinfo
+values ('김민섭','1988.04.27','194','서울SK나이츠','FD','1','성균관대','sk');
+
+insert into pinfo
+values ('김민수','1982.01.16','200','서울SK나이츠','FD','15','경희대','sk');
+
+insert into pinfo
+values ('김선형','1988.07.01','187','서울SK나이츠','GD','5','중앙대','sk');
+
+insert into pinfo
+values ('김우겸','1986.08.31','196','서울SK나이츠','FD','21','한양대','sk');
+
+insert into pinfo
+values ('마리오리틀','1986.12.12','190','서울SK나이츠','GD','45','','sk');
+
+insert into pinfo
+values ('변기훈','1989.01.26','187','서울SK나이츠','GD','7','건국대','sk');
+
+insert into pinfo
+values ('송창무','1982.12.20','205','서울SK나이츠','C','12','명지대','sk');
+
+insert into pinfo
+values ('이정석','1982.07.06','184','서울SK나이츠','GD','2','연세대','sk');
+
+insert into pinfo
+values ('이현석','1992.12.15','190','서울SK나이츠','GD','11','상명대','sk');
+
+insert into pinfo
+values ('최원혁','1992.08.07','183','서울SK나이츠','GD','3','한양대','sk');
+
+insert into pinfo
+values ('최준용','1994.04.04','200.2','서울SK나이츠','FD','35','연세대','sk');
+
+insert into pinfo
+values ('코트니심스','1983.10.21','205.1','서울SK나이츠','C','44','VirginiaPolytechnic','sk');
+
+insert into pinfo
+values ('함준후','1988.06.16','195','서울SK나이츠','FD','6','중앙대','sk');
+
+insert into pinfo
+values ('김준일','1992.05.07','201','서울삼성썬더스','C','31','연세대','sam');
+
+insert into pinfo
+values ('김태술','1984.08.13','180','서울삼성썬더스','GD','1','연세대','sam');
+
+insert into pinfo
+values ('김태형','1988.07.10','185','서울삼성썬더스','GD','16','성균관대','sam');
+
+insert into pinfo
+values ('리카르도라틀리프','1989.02.20','199.2','서울삼성썬더스','C','20','Missouri','sam');
+
+insert into pinfo
+values ('마이클크레익','','188.4','서울삼성썬더스','FD','32','','sam');
+
+insert into pinfo
+values ('문태영','1978.02.10','194','서울삼성썬더스','FD','15','리치몬드','sam');
+
+insert into pinfo
+values ('이관희','1988.04.29','190','서울삼성썬더스','GD','2','연세대','sam');
+
+insert into pinfo
+values ('이동엽','1994.02.22','193','서울삼성썬더스','GD','5','고려대','sam');
+
+insert into pinfo
+values ('이시준','1983.07.26','180','서울삼성썬더스','GD','17','명지대','sam');
+
+insert into pinfo
+values ('이종구','1994.03.22','188','서울삼성썬더스','GD','24','경희대','sam');
+
+insert into pinfo
+values ('이호현','1992.12.02','182','서울삼성썬더스','GD','21','중앙대','sam');
+
+insert into pinfo
+values ('임동섭','1990.08.29','198','서울삼성썬더스','FD','13','중앙대','sam');
+
+insert into pinfo
+values ('주희정','1977.02.04','181','서울삼성썬더스','GD','9','고려대2년중퇴','sam');
+
+insert into pinfo
+values ('천기범','1994.05.28','186.2','서울삼성썬더스','GD','4','연세대','sam');
+
+insert into pinfo
+values ('최윤호','1986.04.25','186','서울삼성썬더스','GD','7','고려대','sam');
+
+insert into pinfo
+values ('김강선','1986.10.14','190','고양오리온오리온스','GD','21','동국대','orion');
+
+insert into pinfo
+values ('김도수','1981.08.20','195','고양오리온오리온스','FD','8','경희대','orion');
+
+insert into pinfo
+values ('김동욱','1981.08.14','194','고양오리온오리온스','FD','13','고려대','orion');
+
+insert into pinfo
+values ('김진유','1994.07.16','188.6','고양오리온오리온스','GD','55','건국대','orion');
+
+insert into pinfo
+values ('문태종','1975.12.01','199','고양오리온오리온스','FD','4','RichmaondUniv','orion');
+
+insert into pinfo
+values ('애런헤인즈','1981.04.01','199','고양오리온오리온스','FD','32','FordhamUniv','orion');
+
+insert into pinfo
+values ('오데리언바셋','','185.3','고양오리온오리온스','GD','2','','orion');
+
+insert into pinfo
+values ('이승현','1992.04.16','197','고양오리온오리온스','FD','33','고려대','orion');
+
+insert into pinfo
+values ('장재석','1991.02.03','203','고양오리온오리온스','C','31','중앙대','orion');
+
+insert into pinfo
+values ('전정규','1983.10.14','187','고양오리온오리온스','GD','7','연세대','orion');
+
+insert into pinfo
+values ('정재홍','1986.01.26','180','고양오리온오리온스','GD','6','동국대','orion');
+
+insert into pinfo
+values ('조효현','1988.07.21','178','고양오리온오리온스','GD','15','성균관대','orion');
+
+insert into pinfo
+values ('최진수','1989.05.11','203','고양오리온오리온스','FD','5','메릴랜드','orion');
+
+insert into pinfo
+values ('허일영','1985.08.05','195','고양오리온오리온스','FD','11','건국대','orion');
+
+insert into pinfo
+values ('김광철','1994.03.27','184.6','울산모비스피버스','GD','25','동국대','mobis');
+
+insert into pinfo
+values ('김동량','1987.11.11','198','울산모비스피버스','C','13','동국대','mobis');
+
+insert into pinfo
+values ('김수찬','1992.03.19','188','울산모비스피버스','GD','7','명지대','mobis');
+
+insert into pinfo
+values ('김주성','1991.03.09','173','울산모비스피버스','GD','3','상명대','mobis');
+
+insert into pinfo
+values ('류영환','','194','울산모비스피버스','FD','4','건국대','mobis');
+
+insert into pinfo
+values ('마커스블레이클리','1988.10.22','192.5','울산모비스피버스','FD','33','Vermont','mobis');
+
+insert into pinfo
+values ('박구영','1984.04.04','183','울산모비스피버스','GD','11','단국대','mobis');
+
+insert into pinfo
+values ('송창용','1987.03.12','192','울산모비스피버스','FD','5','한양대','mobis');
+
+insert into pinfo
+values ('양동근','1981.09.14','181','울산모비스피버스','GD','6','한양대','mobis');
+
+insert into pinfo
+values ('유성호','1988.01.02','200','울산모비스피버스','C','9','고려대','mobis');
+
+insert into pinfo
+values ('이지원','1988.03.17','190','울산모비스피버스','GD','23','경희대','mobis');
+
+insert into pinfo
+values ('전준범','1991.08.27','195','울산모비스피버스','FD','17','연세대','mobis');
+
+insert into pinfo
+values ('정성호','1993.06.03','194','울산모비스피버스','FD','20','연세대','mobis');
+
+insert into pinfo
+values ('찰스로드','1985.06.25','200.1','울산모비스피버스','C','1','MississippiSt','mobis');
+
+insert into pinfo
+values ('최지훈','1989.03.07','192','울산모비스피버스','FD','2','경희대','mobis');
+
+insert into pinfo
+values ('함지훈','1984.12.11','198','울산모비스피버스','FD','12','중앙대','mobis');
+
+insert into pinfo
+values ('기승호','1985.04.13','194','창원LG세이커스','FD','31','동국대','lg');
+
+insert into pinfo
+values ('김영환','1984.07.05','195','창원LG세이커스','FD','9','고려대','lg');
+
+insert into pinfo
+values ('김종규','1991.07.03','207','창원LG세이커스','C','15','경희대','lg');
+
+insert into pinfo
+values ('류종현','1986.08.20','205','창원LG세이커스','C','32','중앙대','lg');
+
+insert into pinfo
+values ('마이클이페브라','','189.2','창원LG세이커스','GD','8','','lg');
+
+insert into pinfo
+values ('박래훈','1989.10.01','188','창원LG세이커스','GD','10','경희대','lg');
+
+insert into pinfo
+values ('박인태','1995.01.04','200.3','창원LG세이커스','C','20','연세대','lg');
+
+insert into pinfo
+values ('안정환','1988.04.02','191','창원LG세이커스','FD','2','명지대','lg');
+
+insert into pinfo
+values ('양우섭','1985.06.27','185','창원LG세이커스','GD','7','고려대','lg');
+
+insert into pinfo
+values ('정성우','','178','창원LG세이커스','GD','3','상명대','lg');
+
+insert into pinfo
+values ('정창영','1988.01.24','192','창원LG세이커스','GD','1','고려대','lg');
+
+insert into pinfo
+values ('제임스메이스','1986.03.08','200.6','창원LG세이커스','C','40','Clemson','lg');
+
+insert into pinfo
+values ('조상열','1989.04.06','188','창원LG세이커스','GD','11','단국대','lg');
+
+insert into pinfo
+values ('최승욱','1993.08.20','194','창원LG세이커스','GD','21','연세대','lg');
+
+insert into pinfo
+values ('한상혁','1993.07.30','183','창원LG세이커스','GD','6','한양대','lg');
+
+insert into pinfo
+values ('김명진','1989.05.151','177','부산KT소닉붐','GD','2','단국대','kt');
+
+insert into pinfo
+values ('김우람','988.01.26','185','부산KT소닉붐','GD','8','경희대','kt');
+
+insert into pinfo
+values ('김종범','1990.09.20','190','부산KT소닉붐','FD','3','동국대','kt');
+
+insert into pinfo
+values ('김현민','1987.09.15','200','부산KT소닉붐','C','13','단국대','kt');
+
+insert into pinfo
+values ('래리고든','','191.8','부산KT소닉붐','FD','24','','kt');
+
+insert into pinfo
+values ('민성주','1987.07.19','201','부산KT소닉붐','C','15','연세대','kt');
+
+insert into pinfo
+values ('박상오','1981.03.24','196','부산KT소닉붐','FD','6','중앙대','kt');
+
+insert into pinfo
+values ('박지훈','1995.01.21','184.1','부산KT소닉붐','GD','0','중앙대','kt');
+
+insert into pinfo
+values ('박철호','1992.05.23','197','부산KT소닉붐','C','11','중앙대','kt');
+
+insert into pinfo
+values ('안정훈','1991.03.17','195.9','부산KT소닉붐','C','33','상명대','kt');
+
+insert into pinfo
+values ('이광재','1984.04.21','187','부산KT소닉붐','GD','1','연세대','kt');
+
+insert into pinfo
+values ('이민재','1987.06.22','189','부산KT소닉붐','FD','30','동국대','kt');
+
+insert into pinfo
+values ('이재도','1991.08.16','180','부산KT소닉붐','GD','4','한양대','kt');
+
+insert into pinfo
+values ('정희원','1994.05.17','191','부산KT소닉붐','FD','21','고려대','kt');
+
+insert into pinfo
+values ('조성민','1983.12.23','190','부산KT소닉붐','GD','10','한양대','kt');
+
+insert into pinfo
+values ('천대현','1984.05.05','193','부산KT소닉붐','FD','9','동국대','kt');
+
+insert into pinfo
+values ('최창진','1993.06.22','185','부산KT소닉붐','GD','5','경희대','kt');
+
+insert into pinfo
+values ('김경수','1989.08.17','185','안양KGC인삼공사','GD','1','상명대','kgc');
+
+insert into pinfo
+values ('김기윤','1992.03.12','180','안양KGC인삼공사','GD','2','연세대','kgc');
+
+insert into pinfo
+values ('김민욱','1990.01.10','205','안양KGC인삼공사','C','9','연세대','kgc');
+
+insert into pinfo
+values ('김종근','1986.05.11','181','안양KGC인삼공사','GD','7','동국대','kgc');
+
+insert into pinfo
+values ('김철욱','1992.06.25','202.3','안양KGC인삼공사','C','32','경희대','kgc');
+
+insert into pinfo
+values ('데이비드사이먼','1982.08.09','203','안양KGC인삼공사','C','55','IUPUI Ft. Wayne','kgc');
+
+insert into pinfo
+values ('문성곤','1993.05.09','196','안양KGC인삼공사','FD','10','고려대','kgc');
+
+insert into pinfo
+values ('박재한','1994.05.29','173.4','안양KGC인삼공사','GD','0','중앙대','kgc');
+
+insert into pinfo
+values ('양희종','1984.05.11','194','안양KGC인삼공사','FD','11','연세대','kgc');
+
+insert into pinfo
+values ('오세근','1987.05.20','200','안양KGC인삼공사','C','41','중앙대','kgc');
+
+insert into pinfo
+values ('이정현','1987.03.03','191','안양KGC인삼공사','FD','3','연세대','kgc');
+
+insert into pinfo
+values ('전성현','1991.11.05','189','안양KGC인삼공사','FD','23','송도고','kgc');
+
+insert into pinfo
+values ('키퍼사익스','','177.9','안양KGC인삼공사','GD','28','','kgc');
+
+insert into pinfo
+values ('한희원','1993.05.01','195','안양KGC인삼공사','FD','4','경희대','kgc');
+
+insert into pinfo
+values ('김민구','1991.06.24','190','전주KCC이지스','GD','23','경희대','kcc');
+
+insert into pinfo
+values ('김지후','1992.01.20','187','전주KCC이지스','GD','13','고려대','kcc');
+
+insert into pinfo
+values ('김효범','1983.11.10','191','전주KCC이지스','GD','34','Vanguard','kcc');
+
+insert into pinfo
+values ('노승준','1988.10.07','196','전주KCC이지스','FD','14','고려대','kcc');
+
+insert into pinfo
+values ('리오라이온스','1987.05.24','205.4','전주KCC이지스','FD','1','Missouri','kcc');
+
+insert into pinfo
+values ('박준우','','192','전주 KCC 이지스','FD','6','조선대','kcc');
+
+insert into pinfo
+values ('송교창','','198','전주 KCC 이지스','FD','7','삼일상고','kcc');
+
+insert into pinfo
+values ('송수인','1986.04.11','193','전주KCC이지스','GD','31','연세대','kcc');
+
+insert into pinfo
+values ('신명호','1983.10.08','184','전주KCC이지스','GD','17','경희대','kcc');
+
+insert into pinfo
+values ('에릭와이즈','1990.03.24','192.8','전주KCC이지스','FD','26','','kcc');
+
+insert into pinfo
+values ('이현민','1983.06.16','174','전주KCC이지스','GD','10','경희대','kcc');
+
+insert into pinfo
+values ('전태풍','1980.07.03','180','전주KCC이지스','GD','3','조지아공대','kcc');
+
+insert into pinfo
+values ('정휘량','1984.02.20','198','전주KCC이지스','FD','9','단국대','kcc');
+
+insert into pinfo
+values ('주태수','1982.11.06','200','전주KCC이지스','C','37','고려대','kcc');
+
+insert into pinfo
+values ('최승욱','1994.04.15','190.7','전주KCC이지스','FD','22','경희대학교','kcc');
+
+insert into pinfo
+values ('하승진','1985.08.04','221','전주KCC이지스','C','0','연세대','kcc');
+
+insert into pinfo
+values ('강상재','1994.12.31','200.1','인천전자랜드엘리펀츠','FD','13','고려대','junja');
+
+insert into pinfo
+values ('김상규','1989.05.23','201','인천전자랜드엘리펀츠','FD','25','단국대','junja');
+
+insert into pinfo
+values ('김지완','1990.06.02','190','인천전자랜드엘리펀츠','GD','3','연세대','junja');
+
+insert into pinfo
+values ('박성진','1986.07.09','182','인천전자랜드엘리펀츠','GD','34','중앙대','junja');
+
+insert into pinfo
+values ('박찬희','1987.04.17','190','인천전자랜드엘리펀츠','GD','30','경희대','junja');
+
+insert into pinfo
+values ('이대헌','1992.04.29','197','인천전자랜드엘리펀츠','FD','21','동국대','junja');
+
+insert into pinfo
+values ('이정제','1990.10.13','203','인천전자랜드엘리펀츠','C','0','고려대','junja');
+
+insert into pinfo
+values ('이헌','1994.05.14','193.2','인천전자랜드엘리펀츠','FD','4','성균관대','junja');
+
+insert into pinfo
+values ('정병국','1984.04.18','185','인천전자랜드엘리펀츠','GD','5','중앙대','junja');
+
+insert into pinfo
+values ('정영삼','1984.04.21','188','인천전자랜드엘리펀츠','GD','20','건국대','junja');
+
+insert into pinfo
+values ('정효근','1993.12.14','202','인천전자랜드엘리펀츠','FD','12','한양대','junja');
+
+insert into pinfo
+values ('제임스 켈리','','197.4','인천전자랜드엘리펀츠','FD','24','','junja');
+
+insert into pinfo
+values ('차민석','1988.05.07','194','인천전자랜드엘리펀츠','FD','11','건국대','junja');
+
+insert into pinfo
+values ('커스버트빅터','1983.01.30','190.3','울산모비스피버스','FD','30','MurrayState','junja');
+
+insert into pinfo
+values ('김봉수','1984.08.01','198','원주동부프로미','C','12','명지대','dongbu');
+
+insert into pinfo
+values ('김영훈','1992.05.21','190','원주동부프로미','FD','23','동국대','dongbu');
+
+insert into pinfo
+values ('김주성','1979.11.09','205','원주동부프로미','FD','32','중앙대','dongbu');
+
+insert into pinfo
+values ('김창모','1991.04.17','190','원주동부프로미','FD','8','연세대','dongbu');
+
+insert into pinfo
+values ('김태홍','1988.08.21','193','원주동부프로미','FD','10','고려대','dongbu');
+
+insert into pinfo
+values ('김현호','1988.03.19','184','원주동부프로미','GD','11','연세대','dongbu');
+
+insert into pinfo
+values ('두경민','1991.09.22','183','원주동부프로미','GD','6','경희대','dongbu');
+
+insert into pinfo
+values ('로드벤슨','1984.10.10','206.7','원주동부프로미','C','2','CalStateBerkeley','dongbu');
+
+insert into pinfo
+values ('박지현','1979.03.05','183','원주동부프로미','GD','26','중앙대','dongbu');
+
+insert into pinfo
+values ('서민수','1993.06.21','197','원주동부프로미','FD','35','동국대','dongbu');
+
+insert into pinfo
+values ('웬델맥키네스','1988.08.18','192.4','원주동부프로미','FD','18','','dongbu');
+
+insert into pinfo
+values ('윤호영','1984.06.01','196','원주동부프로미','FD','13','중앙대','dongbu');
+
+insert into pinfo
+values ('이지운','1985.02.28','192','원주동부프로미','FD','7','한양대','dongbu');
+
+insert into pinfo
+values ('최성모','1994.04.15','186.4','원주동부프로미','GD','4','고려대','dongbu');
+
+insert into pinfo
+values ('한정원','1984.04.08','200','원주동부프로미','FD','1','중앙대','dongbu');
+
+insert into pinfo
+values ('허웅','1993.08.05','185','원주동부프로미','GD','3','연세대','dongbu');
