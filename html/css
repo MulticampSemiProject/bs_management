@@ -1,0 +1,148 @@
+@CHARSET "EUC-KR";
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface');
+
+/* Common CSS Start */
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+ul,ol{
+	list-style: none;
+}
+/* Common CSS End*/
+
+/* Header CSS Start */
+header{
+	margin:0 auto;  /*x축은 0로 잡고 y축은 자동으로 잡아라 -> 항상 가운데 정렬*/
+	width:850px;
+	height:150px;
+	background:#AFE1FF;
+	position:relative;
+}
+hgroup{
+	font-family: 'Abril Fatface', cursive;
+	position:absolute;
+	top:20px;
+	left:50px;
+}
+#main_nav{
+	font-family: 'Abel', sans-serif;
+	position:absolute;
+	bottom:0;
+	left:250px;
+}
+#main_nav > ul > li{
+	float:left;
+}
+#main_nav > ul > li > a{
+	font-size:150%;
+	padding:2px 5px;
+	display:block;
+	background:#EAEAEA;
+	color:black;
+}
+#main_nav > ul > li > a:hover{
+	color:#EAEAEA;
+	background:black;
+}
+
+#top_nav{
+	font-family: 'Abel', sans-serif;
+	position:absolute;
+	top:0;
+	right:0;
+}
+#top_nav > ul> li{
+	float:left;
+}
+#top_nav > ul> li > a{
+	padding:2px 5px;
+	display:block;
+	background:#EAEAEA;
+	color:black;
+}
+#top_nav > ul> li > a:hover{
+	color:#EAEAEA;
+	background:black;
+}
+/* Header CSS End */
+
+/* Nav CSS Start */
+#navi{
+	margin:0 auto;
+	width:850px;
+	height:40px;
+	background:black;
+}
+/* Nav CSS End */
+
+/* Section CSS Start */
+section{
+	margin:0 auto;
+	width:850px;
+	height:500px;
+	background:#EAEAEA;
+}
+section > aside{
+	float:left; /*왼쪽정렬*/
+}
+section > #left_aside{
+	width:150px;
+	height:500px;
+	background:#EAEAEA;
+}
+section > #left_aside > div{
+	font-family: 'Abel', sans-serif;
+	width:130px;
+	height:50px;
+	border:1px solid black;
+	line-height:50px;
+	display:block;
+	text-align: center;
+	font-size: 200%;
+	margin:40px 0px 0px 10px;
+}
+#left_aside > div:hover{
+	background:black;
+	color:#EAEAEA;
+}
+#left_aside > div > a:hover{
+	background:black;
+	color:#EAEAEA;
+}
+section > #center_aside{
+	width:500px;
+	height:500px;
+	background:#FFBB00;
+}
+section > #center_aside > div{
+	margin:30px 0px 0px 10px;
+	width:480px;
+	height:200px;
+	/* border:1px solid black; */
+	display:block;
+	background:white;
+}
+section > #right_aside{
+	width:200px;
+	height:500px;
+	background:#EAEAEA;
+}
+section > #right_aside > img{
+	margin:10px 0 0 10px;
+}
+/* Section CSS End */
+
+/* Footer CSS Start */
+footer{
+	margin:0 auto;
+	width:850px;
+	height:40px;
+	background:black;
+}
+/* Footer CSS End */
+
