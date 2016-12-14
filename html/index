@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+<!-- Header Area -->
+<header>
+	<hgroup>
+		<h1>HTML5 & JavaScript</h1>
+		<h4>CSS,AJAX,jQuery</h4>
+	</hgroup>
+	<nav id="main_nav">
+		<ul>
+			<li><a href="">HTML5</a></li>
+			<li><a href="">CSS3.0</a></li>
+			<li><a href="">JavaScript</a></li>
+			<li><a href="">AJAX</a></li>
+			<li><a href="">jQuery</a></li>
+		</ul>
+	</nav>
+	<nav id="top_nav">
+		<ul>
+			<li><a href="">LOGIN</a></li>
+			<li><a href="">REGISTER</a></li>
+			<li><a href="">ABOUT US</a></li>
+		</ul>
+	</nav>
+</header>
+
+<!-- Nav Area -->
+<nav id="navi"></nav>
+
+<!-- Section Area -->
+<section>
+	<aside id="left_aside">
+		<div id="btn_1">
+			<a href="">HTML5</a>
+		</div>
+		<div id="btn_2">
+			<a href="">CSS3.0</a>
+		</div>
+		<div id="btn_3">
+			<a href="">JavaScript</a>
+		</div>
+		<div id="btn_4">
+			<a href="">AJAX</a>
+		</div>	
+		<div id="btn_3">
+			<a href="">jQuery</a>
+		</div>			
+	</aside>
+	<aside id="center_aside">
+		<div></div>
+		<div></div>
+	</aside>
+	<aside id="right_aside">
+		<img src="http://placehold.it/180x100">
+		<img src="http://placehold.it/180x100">
+		<img src="http://placehold.it/180x100">
+		<img src="http://placehold.it/180x100">
+	</aside>
+</section>
+
+<!-- Footer Area -->
+<footer></footer>
+
+</body>
+</html>
