@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!-- 플러그인 만들기 -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="js/jquery.js"></script>
+<script src="js/table.js"></script>
+<script>
+$(document).ready(function(){
+	Tab1.setSize('400px','120px');
+	Tab1.makeTable();
+});
+</script>
+</head>
+<body>
+<table id="tab_1">
+	<thead>
+		<tr> <th>ID</th> <th>PWD</th> <th>NAME</th> </tr>
+	</thead>
+	<tbody>
+		<tr> <td>id01</td> <td>pwd01</td> <td>james1</td> </tr>
+		<tr> <td>id02</td> <td>pwd02</td> <td>james2</td> </tr>
+		<tr> <td>id03</td> <td>pwd03</td> <td>james3</td> </tr>
+		<tr> <td>id04</td> <td>pwd04</td> <td>james4</td> </tr>
+		<tr> <td>id05</td> <td>pwd05</td> <td>james5</td> </tr>
+	</tbody>
+</table>
+</body>
+</html>
