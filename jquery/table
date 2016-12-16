@@ -1,0 +1,57 @@
+var Tab1={
+	width:'300px',
+	height:'150px',
+	setSize:function(w,h){ //테이블 사이즈를 셋팅
+		this.width=w;
+		this.height=h;
+	},
+	makeTable:function(){
+		$('#tab_1').css({
+			width:this.width,
+			height:this.height,
+			border:'1px solid black',
+			'border-collapse':'collapse' //table 경계없애기
+		});
+		$('#tab_1 > thead > tr').css({
+			color:'white',
+			background:'black'
+		});
+		$('#tab_1 > tbody > tr:even').css({
+			textAlign: 'center',
+			color:'black',
+			background:'#EAEAEA'
+		});
+		$('#tab_1 > tbody > tr:odd').css({
+			textAlign: 'center',
+			color:'black',
+			background:'white'
+		});
+		$('#tab_1 > tbody > tr').hover(function(){ //마우스를 댔을때,마우스를 치웠을때 이벤트 (2가지function)
+			$('#tab_1 > tbody > tr:not(this)').css({
+				color:'gray'
+			})
+			$(this).css({ //$(this) == $('#tab_1 > tbody > tr')
+				color:'skyblue'
+			});			
+		},function(){
+			$('#tab_1 > tbody > tr').css({
+				color:'black'
+			}); 
+		}); 
+		$('#tab_1 > tbody > tr').click(function(){
+			alert('click');
+		}); //클릭했을때 이벤트
+		
+		/* var a=1;
+		$('#tab_1 > tbody > tr:eq('+a+')').css({ //실행할때마다 숫자가 올라감
+			textAlign: 'center',
+			color:'black',
+			background:'white'
+		}); 
+		$('#tab_1 > tbody > tr:not(tr:eq(2))').css({ //0부터 시작
+			textAlign: 'center',
+			color:'black',
+			background:'#EAEAEA'
+		}); */
+	} //end maketable
+};
